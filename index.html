@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>datavis</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="ontmantel" />
+    <meta name="author" content="Jaimie de Rijk" />
+    <meta name="keywords" content="zoekterm1, zoekterm2, ..." />
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1>Rocket League Stats</h1>
+    <h1>  </h1>
+
+
+    <div id="graph">
+        <h2 id="graphname"></h2>
+        <div id="barlegend">
+            <div id="firstBar"></div>
+            <div id="secondBar"></div>
+            <div id="thirdBar"></div>
+        </div>
+        <div id="legend">
+            <ul>
+                <li data-line="line-1"><a>Matches</a></li>
+                <li data-line="line-2"><a>Wins</a></li>
+                <li data-line="line-3"><a>goals</a></li>
+                <li data-line="line-4"><a>mvp</a></li>
+                <li data-line="all" class="active"><a >Toon allemaal</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <article id="profile">
+        <p>Steam profile</p>
+        <h2>Giantkiller</h2>
+        <h3>Jaimie</h3>
+        <img src="avatar.jpg">
+        <p>Hours played in the last two weeks</p>
+        <div id="gametimegraph"></div>
+
+    </article>
+
+    <article id="menu">
+        <h2>Chart menu</h2>
+        <h3>average per match</h3>
+        <p>linechart:</p>
+        <div class="button " data-value="factorlinechart">wins, goals, mvp per match vs matches played</div>
+        <p>barchart:</p>
+        <div class="button " data-value="factorgoalsvswins">Goals and wins per match</div>
+        <div class="button" data-value="goalspermatch">Goals per match</div>
+        <div class="button" data-value="winspermatch">Wins per match</div>
+        <div class="button" data-value="winsandmvppermatch">Wins and mvp per match</div>
+        <div class="button" data-value="assistsandgoalspermatch">Assists and goals per match</div>
+        <div class="button" data-value="assistspermatch">Assists per match</div>
+        <div class="button" data-value="assistsandsavespermatch">Assists and saves per match</div>
+        <!-- <div class="button" data-value="">Assists, goals and saves per match</div> -->
+        <h3>total per day</h3>
+        <p>barchart:</p>
+        <div class="button" data-value="totalmatches">Matches Played</div>
+        <div class="button" data-value="matchesvsgoalsvswins">Matches, goals and wins</div>
+        <p>linechart:</p>
+        <div class="button " data-value="linechart">Matches,wins, goals and mvp </div>
+    </article>
+
+    <article id="stelling">
+    <h2>Stelling</h2>
+        <p>In de de maand September ben ik een betere Rocket League speler geworden.</p>
+    <h2>Argumentatie</h2>
+        <p>Ik speel al 2 maanden regelmatig het computerspel Rocket League. Omdat ik zo regelmatig speel verwacht ik dat mijn doelpunt gemiddelde per wedstrijd hoger zou zijn later in de maand. Ook heb ik gekeken naar hoe vaak ik mvp ben en hoe vaak ik in het winnende team zit. </p>
+    <h2>Conclusie</h2>
+        <p>Ik ben in september geen betere speler geworden. Er is geen stijgende lijn te zien en ik lijk goede dagen en slechte dagen te hebben. Maar dus geen algehele verbetering.</p>
+    </article>
+
+<!--     <div id="chart">
+            <h1 class="title"><span></span></h1>
+        </div>
+
+     -->
+
+
+    <footer>
+        <p>Made by Jaimie de Rijk</p>
+        <p>HVA Studentnummer:500698514</p>
+    </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script type="text/javascript" src="gaming.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>

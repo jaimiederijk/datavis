@@ -1,0 +1,340 @@
+
+#graph svg {
+    margin-top: -30px;
+	padding: 30px 80px 190px 90px;
+}
+#graphname {
+  margin-top: 0;
+	margin-bottom:0px;
+	background-color:#3a3a3a;
+	padding: 10px 0px 10px 65px;
+}
+#gametimegraph svg {
+	padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 11px;
+}
+#graph {
+	width: 1110px;
+	display:block;
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.24);
+  border: 1px solid #ffffff;
+}
+#button {
+	background-color:#3e8aa7;
+	padding:5px;
+	border-radius:5px;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+#button:hover {
+	cursor: pointer;
+}
+.button {
+  background-color:#3e8aa7;
+  padding:5px;
+  margin-bottom: 5px;
+  border-radius:5px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.button:hover {
+  cursor: pointer;
+}
+* {
+  font-family: Verdana,  sans-serif;
+  color:white;
+}
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #1f1f1f;
+  min-width: 1745px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 4px;
+}
+
+h2 {
+  font-weight: normal;
+
+  font-size: 24px;
+}
+
+text {
+  font-size: 12px;
+}
+#quote {
+	position:absolute;
+	left:200px;
+	top:150px;
+	width: 300px;
+	color:#ffffff;
+	background-color:#090909;
+	padding:5px;
+	border-radius:5px;
+}
+#menu {
+  width: 260px;
+  margin: 20px;
+  position: absolute;
+    right: 0;
+    top: 70px;
+  /*border: 1px solid #ffffff;*/
+}
+.disabled {
+	display:none;
+}
+.selected {
+  background-color: #fc9701;
+}
+footer {
+	position:relative;
+	top:200px;
+	left:20px;
+}
+#profile {
+    position: absolute;
+    top: 70px;
+    margin: 20px;
+    background-color: #3a3a3a;
+    padding: 10px;
+}
+#profile h3 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+#profile >p:first-of-type {
+  color: #6a6a6a;
+      margin-top: 0;
+}
+
+#chart , #legend {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+#barlegend {
+    float: right;
+    position: relative;
+    right: 20px;
+    top: 20px;
+}
+#firstBar {
+  background-color:#146b9d;
+}
+#secondBar {
+  background-color:#fc9701;
+}
+#thirdBar {
+  background-color:#143568;
+}
+.y2 {
+	transform: translate(-50px);
+}
+.legendbox {
+     padding: 10px;
+  margin: 5px;
+}
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans";
+  margin-bottom: 50px;
+}
+body>h1 {
+  margin-left: 20px;
+}
+#stelling {
+  width: 600px;
+  margin: auto;
+}
+/* enter voeg nieuwe toe */
+/* update oude cirkel */
+/* exit als je element wilt weggooien */
+
+#chart rect{
+  fill: #9999ff;
+}
+
+.linechart svg {
+  padding: 20px;
+}
+
+.linechart text {
+  fill: grey;
+  font-size: 15px;
+  text-anchor: end; 
+}
+
+.linechart .y2 text ,.linechart .y2 line{
+  fill: black;
+  stroke: #000000;
+  
+}
+.linechart .y{
+  fill: black;
+  stroke: #696969;
+  
+}
+.linechart .x{
+  fill: black;
+  stroke: #696969;
+  
+}
+.linechart .tick line {
+  z-index: -99;
+}
+
+.linechart circle {
+  fill: white;
+  position: relative;
+  stroke: black;
+  stroke-width: 3px;
+  transition: all .3s;
+  cursor: pointer;
+  z-index: 10;
+  transform-origin: 50% 50%;
+  transform: scale(1);
+}
+
+.linechart circle.active {
+  transform: scale(1.2);
+}
+
+.linechart circle:hover {
+  stroke-width: 5px;
+}
+
+/* Color circles */
+.linechart .line-1-cirkel {
+  stroke: #6cc489;
+}
+
+.linechart .line-2-cirkel {
+  stroke: #5ca9da;
+}
+
+.linechart .line-3-cirkel {
+  stroke: #e26066;
+}
+
+.linechart .line-4-cirkel {
+  stroke: #fc9701;
+}
+
+.linechart .axis path, .axis line {
+  /*fill: none;*/
+  /*stroke : #999997;*/
+}
+.linechart .axis path, .axis domain {
+  fill: none;
+}
+#graph .linechart {
+    padding: 50px 80px 0px 90px;
+}
+/* Tooltip styling */
+ #tooltip {
+  background: #ededeb;
+  color: #b7b7b5;
+  display: block;
+  font-size: 12px;
+  padding: 10px 15px;
+}
+
+ #tooltip:after, .arrow_box:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+ #tooltip:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-right-color: #ededeb;
+  border-width: 10px;
+  margin-top: -10px;
+}
+
+#legend {
+  font-size: 13px;
+  margin: 0 auto;
+  width: 700px;
+  text-align: center;
+  transform: scale(0);
+  opacity: 0;
+}
+
+#legend ul li {
+  position: relative;
+  display: inline-block;
+  margin-right: 45px;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+#legend ul li:hover:before {
+  transform: scale(1.2);
+}
+
+#legend ul li:before {
+  content: " ";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  left: -30px;
+  transition: all .3s;
+}
+
+#legend ul li:nth-child(1):before { background-color: #6cc489;}
+#legend ul li:nth-child(2):before { background-color: #5ca9da;}
+#legend ul li:nth-child(3):before { background-color: #e26066;}
+#legend ul li:nth-child(4):before { background-color: #fc9701;}
+#legend ul li:nth-child(5):before { background-color: #cfcfcf;}
+
+#legend ul li.active {
+  font-weight: bold;
+  opacity: 1;
+}
+
+ .title {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 30px 0;
+}
+ .title:before {
+/*  border-top: 1px solid #dfdfdf;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;*/
+}
+ .title span {
+  background: #fff;
+  padding: 0 15px;
+}
+.hide {
+  display: none;
+      opacity: 0;
+}
+.linechart .black {
+  fill: #000000;
+}
